@@ -1,1 +1,1 @@
-console.log('Webpack works');
+require('./main.css')
