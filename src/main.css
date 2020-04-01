@@ -1,15 +1,25 @@
 body {
-    margin: 0;
-    background-color: #444;
+	margin: 0;
+	background-color: #444;
 }
 
-h1 {
-    height: 100vh;
-    display: flex;
-    color: #fff;
-    align-items: center;
-    justify-content: center;
-    font-size: 5em;
-    font-family: sans-serif;
-    text-shadow: 0 0 20px black;
+.profile {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	flex-flow: column;
+}
+
+.profile img {
+	border-radius: 100%;
+	width: 300px;
+	text-shadow: 0 0 20px black;
+}
+
+.profile h1 {
+	color: #fff;
+	font-size: 5em;
+	font-family: sans-serif;
+	text-shadow: 0 0 20px black;
 }

@@ -28,19 +28,30 @@ module.exports = {
 				]
 			},
 			{
-				test:/\.html$/,
+				test: /\.html$/,
 				use: [
 					{
 						loader: 'file-loader',
 						options: {
-							name: "[name].html"
-						},
+							name: '[name].html'
+						}
 					},
 					{
 						loader: 'extract-loader'
 					},
 					{
 						loader: 'html-loader'
+					}
+				]
+			},
+			{
+				test: /\.(jpg|gif|png|)$/,
+				use: [
+					{
+						loader: 'file-loader',
+						options: {
+							name: 'images/[name].[ext]'
+						}
 					}
 				]
 			}
